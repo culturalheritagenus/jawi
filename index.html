@@ -363,6 +363,7 @@ or names.</p>
         { name: "Sum Hung Yee", role: "Research Assistant", url: "#", email: "", note: "LLM finetuning"},
       ],
       models: [
+        { name: "Jawi-OCR-Kraken-v1", desc: "Kraken-based OCR model for the Jawi script.", links: [{t:"HuggingFace", href:"https://huggingface.co/culturalheritagenus/Jawi-OCR-Kraken-v1"}], details:"Finetuned version of 10.5281/zenodo.7050270" },
         { name: "Qwen.25-VL-3B-for-Jawi-v3", desc: "OCR model for the Jawi script.", links: [{t:"HuggingFace", href:"https://huggingface.co/culturalheritagenus/Qwen2.5-VL-3B-for-jawi-v3"}], details:"Finetuned version of Qwen2.5-Vl-3B-IT" },
         { name: "Rumi-correction-v2", desc: "Converting Jawi to Rumi (Romanized Script Malay).", links: [{t:"HuggingFace", href:"https://huggingface.co/culturalheritagenus/rumi-correction-v2"}], details:"Finetuned version of AI Singapore's Gemma-SEA-LION-v3-9B-IT." },
       ],
@@ -371,9 +372,10 @@ or names.</p>
         { name: "bntng-disambiguation-v1", desc: "Jawi word-sense disambiguation", links: [{t:"HuggingFace", href:"https://huggingface.co/datasets/mevsg/bntng-disambiguation-v1"}], details:"Proof-of-concept dataset." },
       ],
       leaderboard: [
-        { rank:1, model:"Qwen.25-VL-3B-for-Jawi-v3 (our finetuned-model)", score:"7%", date:"November 2025", link:"#" },
-        { rank:2, model:"GPT-5 mini (via API)", score:"22%", date:"November 2025", link:"#" },
-        { rank:3, model:"Deepseek-OCR", score:"42%", date:"November 2025", link:"#" },
+        {rank:1,model:"Jawi-OCR-Kraken-v1",score:"3.7%",link:"https://huggingface.co/culturalheritagenus/Jawi-OCR-Kraken-v1",date:"March 2026"}
+        { rank:2, model:"Qwen.25-VL-3B-for-Jawi-v3 (our finetuned-model)", score:"7%", date:"November 2025", link:"https://huggingface.co/culturalheritagenus/Jawi-OCR-Qwen-v2" },
+        { rank:3, model:"GPT-5 mini (via API)", score:"22%", date:"November 2025", link:"#" },
+        { rank:4, model:"Deepseek-OCR", score:"42%", date:"November 2025", link:"#" },
       ],
       publications: [
         { title:"Advancing OCR and Word Sense Disambiguation for the Jawi Script using LLMs and VLMs", venue:"DH2025", year:2025, links:[{t:"PDF", href:"dh2025.pdf"}], authors:"Miguel Escobar Varela, Stephane Bressan, Faizah Zakaria, Ganesh Neelalkanta Iyer, Seng Guo-Quan, Pratik Karmakar"},
